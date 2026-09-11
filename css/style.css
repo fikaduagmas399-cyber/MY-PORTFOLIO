@@ -803,4 +803,420 @@ body {
     font-weight: 600;
 }
 
-@media screen and (min)
+@media screen and (min-width: 48rem) and (max-width: 63.999rem) {
+    .header-container {
+        position: relative;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .brand-logo {
+        gap: 0.75rem;
+    }
+
+    .logo-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.125rem;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .header-actions {
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #theme-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0.375rem;
+        transform: translateY(-50%);
+    }
+
+    .nav-menu {
+        position: static;
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin-left: auto;
+        padding: 0 3.25rem 0 1.5rem;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        transform: none;
+        visibility: visible;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0;
+        font-size: 0.9375rem;
+        white-space: nowrap;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:focus-visible {
+        padding-left: 0;
+    }
+
+     .hero-section {
+         padding: 5rem 2rem;
+    }
+    
+    .hero-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        max-width: 72rem;
+        text-align: left;
+    }
+    
+    .hero-content {
+        align-items: flex-start;
+        flex: 1 1 55%;
+        max-width: 34rem;
+    }
+    
+    .hero-greeting {
+        font-size: 1.25rem;
+    }
+    
+    .hero-title {
+        font-size: 3.25rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.0625rem;
+        max-width: 32rem;
+        margin-bottom: 2.25rem;
+    }
+    
+    .hero-cta {
+        width: auto;
+        margin-bottom: 2.25rem;
+        margin-left: 5rem;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-bottom: 0;
+        margin-left: 3rem;
+    }
+    
+    .hero-avatar {
+        flex: 0 1 38%;
+    }
+    
+    .hero-avatar img {
+        width: clamp(15rem, 28vw, 19rem);
+        height: clamp(15rem, 28vw, 19rem);
+    }
+
+    .about-section {
+        padding: 5rem 2rem;
+    }
+    
+    .about-container {
+        max-width: 72rem;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .section-title::after {
+        width: 3.5rem;
+        height: 0.3rem;
+    }
+    
+    .about-content-grid {
+        display: grid;
+        grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.15fr);
+        align-items: center;
+        gap: 3rem;
+        text-align: left;
+    }
+    
+    .about-image-wrapper {
+        width: 100%;
+        max-width: 22rem;
+        margin: 0 auto;
+    }
+    
+    .about-text-content {
+        align-items: flex-start;
+        max-width: 38rem;
+    }
+    
+    .about-headline {
+        font-size: 1.625rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .about-description {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+    }
+    
+    .skills-section {
+        padding: 5rem 2rem;
+    }
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 3rem;
+        max-width: 72rem;
+    }
+    
+    .skills-container > .section-title {
+        grid-column: 1 / -1;
+        justify-self: center;
+        font-size: 2.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .skills-container > .section-title::after {
+        width: 3.5rem;
+        height: 0.3rem;
+    }
+    
+    .skills-category {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 0;
+    }
+    
+    .category-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    
+    .skill-card {
+        min-height: 8rem;
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .skill-name {
+        font-size: 0.875rem;
+    }
+    
+    .projects-section {
+        padding: 5rem 2rem;
+    }
+    
+    .projects-container {
+        max-width: 72rem;
+    }
+    
+    .projects-container > .section-title {
+        font-size: 2.25rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .projects-container > .section-title::after {
+        width: 3.5rem;
+        height: 0.3rem;
+    }
+    
+    .projects-container > .section-description {
+        max-width: 42rem;
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        max-width: none;
+    }
+    
+    .project-card {
+        min-width: 0;
+    }
+    
+    .project-content {
+        padding: 1.75rem 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.375rem;
+    }
+    
+    .project-description {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+    
+    .project-actions .btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.9375rem;
+    }
+    
+    .services-section {
+        padding: 5rem 2rem;
+    }
+    
+    .services-container {
+        max-width: 72rem;
+    }
+    
+    .services-container > .section-title {
+        font-size: 2.25rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .services-container > .section-title::after {
+        width: 3.5rem;
+        height: 0.3rem;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        max-width: none;
+    }
+    
+    .service-card {
+        min-width: 0;
+        padding: 2.25rem 1.75rem;
+    }
+    
+    .service-title {
+        font-size: 1.375rem;
+    }
+    
+    .service-tech-stack {
+        margin-bottom: 1.25rem;
+    }
+    
+    .tech-text {
+        font-size: 0.9375rem;
+    }
+    
+    .service-description {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+    
+    .contact-section {
+        padding: 5rem 2rem;
+    }
+    
+    .contact-container {
+        max-width: 72rem;
+    }
+    
+    .contact-container > .section-title {
+        font-size: 2.25rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .contact-container > .section-title::after {
+        width: 3.5rem;
+        height: 0.3rem;
+    }
+    
+    .contact-container > .section-description {
+        max-width: 42rem;
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .form-card {
+        max-width: 38rem;
+        padding: 2.25rem 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .form-title {
+        font-size: 1.375rem;
+        margin-bottom: 1.75rem;
+    }
+    
+    .contact-form {
+        gap: 1.5rem;
+    }
+    
+    .form-label {
+        font-size: 0.9375rem;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .form-textarea {
+        min-height: 9rem;
+    }
+    
+    .btn-submit {
+        margin-top: 0.75rem;
+    }
+    
+    .contact-socials {
+        gap: 1rem;
+    }
+    
+    .contact-socials a {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .contact-socials .social-icon {
+        width: 1.375rem;
+        height: 1.375rem;
+    }
+    
+    .site-footer {
+        padding: 2rem;
+    }
+    
+    .footer-container {
+        max-width: 72rem;
+    }
+    
+    .copyright-text {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+    
+}
