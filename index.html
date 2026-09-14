@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>john duo | Portfolio</title>
+    <title>Fikadu Agmas | Portfolio</title>
+
+    <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        if (savedTheme === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {
+      }
+    })();
+  </script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +24,7 @@
         <div class="header-container">
             <a href="#" class="brand-logo" aria-label="Home">
                 <span class="logo-avatar" aria-hidden="true">F</span>
-                <span class="logo-text">john<span class="logo-dev">.dev</span></span>
+                <span class="logo-text">Fikadu<span class="logo-dev">.dev</span></span>
             </a>
             <div class="header-actions">
                 <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" aria-pressed="false">
@@ -53,7 +65,7 @@
         <section id="home" class="hero-section" aria-labelledby="hero-title">
             <div class="hero-container">
                 <div class="hero-content">
-                    <p class="hero-greeting">Hi, I'm <span class="highlight">john duo</span></p>
+                    <p class="hero-greeting">Hi, I'm <span class="highlight">Fikadu Agmas</span></p>
                     <h1 id="hero-title" class="hero-title">Frontend Developer</h1>
                     <p class="hero-description">I build modern, high-performance, and responsive web applications with interactive user experiences.</p>
                     <div class="hero-cta">
@@ -95,7 +107,7 @@
                     </ul>
                 </div>
                 <div class="hero-avatar">
-                    <img src="assets/images/#" alt="Profile photo of john duo" width="300" height="300" loading="eager" fetchpriority="high" decoding="async" />
+                    <img src="assets/images/profile.jpg" alt="Profile photo of john duo" width="300" height="300" loading="eager" fetchpriority="high" decoding="async" />
                 </div>
             </div>
             
@@ -105,11 +117,11 @@
                 <h2 id="about-title" class="section-title">About Me</h2>
                 <div class="about-content-grid">
                     <figure class="about-image-wrapper">
-                        <img src="assets/images/#" alt="Developer portrait photo" width="400" height="500" loading="lazy" decoding="async" />
+                        <img src="assets/images/profile-photo.jpeg" alt="Developer portrait photo" width="400" height="500" loading="lazy" decoding="async" />
                     </figure>
                     <div class="about-text-content">
                         <h3 class="about-headline">Passionate Frontend Development</h3>
-                        <p class="about-description">Hello! I am john duo a Frontend developer focused on making websites beautiful, fast, and user-friendly. I have a strong foundation in building responsive websites that work well on all screens using HTML5, CSS3, and JavaScript. I have a deep passion for the moment design visions are transformed into vibrant, smooth, and user-delighting digital experiences.</p>
+                        <p class="about-description">Hello! I am Fikadu Agmas a Frontend developer focused on making websites beautiful, fast, and user-friendly. I have a strong foundation in building responsive websites that work well on all screens using HTML5, CSS3, and JavaScript. I have a deep passion for the moment design visions are transformed into vibrant, smooth, and user-delighting digital experiences.</p>
                         <p class="about-description">Learning new technologies every day and enhancing my skills is part of my work. Currently, I am completing my learning of modern Frontend Frameworks, which enables me to build more complex and faster web applications. Throughout the process from design to code, I am always ready to create user-centered solutions.</p>
                     </div>
                 </div>
@@ -184,7 +196,7 @@
                 <div class="projects-grid">
                     <article class="project-card">
                         <figure class="project-image-wrapper">
-                            <img src="assets/images/#" alt="Screenshot of digital calculator"  width="600" height="340" loading="lazy" decoding="async" />
+                            <img src="assets/images/calculator-image.jpg" alt="Screenshot of digital calculator"  width="600" height="340" loading="lazy" decoding="async" />
                         </figure>
                         <div class="project-content">
                             <h3 class="project-title">Digital Calculator</h3>
@@ -211,7 +223,7 @@
                     </article>
                     <article class="project-card">
                         <figure class="project-image-wrapper">
-                            <img src="assets/images/#" alt="Screenshot of Inventory Management"  width="600" height="340" loading="lazy" decoding="async" />
+                            <img src="assets/images/inventory-image.jpg" alt="Screenshot of Inventory Management"  width="600" height="340" loading="lazy" decoding="async" />
                         </figure>
                         <div class="project-content">
                             <h3 class="project-title">Inventory Management</h3>
