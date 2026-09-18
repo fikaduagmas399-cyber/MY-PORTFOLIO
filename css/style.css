@@ -1,23 +1,30 @@
 :root {
-    --bg-main: #F8FAFC;
-    --bg-card: #FFFFFF;
-    --text-primary: #0F172A;
-    --text-secondary: #64748B;
-    --brand-accent: #4F46E5;
-    --border-main: #E2E8F0;
+    --bg-main: #0F172A;
+    --bg-card: #1E293B;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --brand-accent: #38BDF8;
+    --border-main: #334155;
     --font-main: Inter,Poppins, system-ui, -apple-system,sans-serif;
+    --header-height: 4rem;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 1px 2px 0 rgb(255 255 255  / 0.05);
+    --shadow-lg: 0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1);
+}
+
+[data-theme="light"] {
+  --bg-main: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-primary: #0F172A;
+ /* --text-secondary: #CBD5E1; */
+  --text-secondary: #64748B;
+  --brand-accent: #4F46E5;
+  --border-main: #E2E8F0;
+  --font-main: Inter,Poppins, system-ui, -apple-system,sans-serif;
     --header-height: 4rem;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-}
-
-[data-theme="dark"] {
-  --bg-main: #0F172A;
-  --bg-card: #1E293B;
-  --text-primary: #F8FAFC;
-  --text-secondary: #CBD5E1;
-  --border-main: #334155;
 }
 
 *, *::before, *::after {
@@ -161,6 +168,11 @@ body {
 .nav-menu a:hover, .nav-menu a:focus-visible {
     color: var(--brand-accent);
     padding-left: 0.5rem;
+}
+
+.nav-menu .nav-link.active{
+    border-bottom: 3px solid var(--brand-accent);
+    color: var(--brand-accent);
 }
 
 .hero-section {

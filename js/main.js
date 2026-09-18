@@ -9,9 +9,9 @@
 
   if (!toggleButton) return;
 
-  let isDark = root.getAttribute(THEME_ATTR) === "dark";
+  let isLight = root.getAttribute(THEME_ATTR) === "light";
 
-  toggleButton.setAttribute("aria-pressed", String(isDark));
+  toggleButton.setAttribute("aria-pressed", String(isLight));
 
   const saveTheme = (theme) => {
     try {
@@ -22,16 +22,16 @@
   };
 
   toggleButton.addEventListener("click", () => {
-    isDark = !isDark;
+    isLight = !isLight;
 
-    if (isDark) {
-      root.setAttribute(THEME_ATTR, "dark");
+    if (isLight) {
+      root.setAttribute(THEME_ATTR, "light");
     } else {
       root.removeAttribute(THEME_ATTR);
     }
 
-    toggleButton.setAttribute("aria-pressed", String(isDark));
-    saveTheme(isDark ? "dark" : "light");
+    toggleButton.setAttribute("aria-pressed", String(isLight));
+    saveTheme(isLight ? "light" : "dark");
   });
 })();
 
@@ -120,3 +120,29 @@
     }
   });
 })();
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px 0px -20% 0px',
+  threshold: 0.2
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const currentId = entry.target.getAttribute('id');
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}, observerOptions);
+
+sections.forEach(section => observer.observe(section));
